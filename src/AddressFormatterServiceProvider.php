@@ -2,7 +2,6 @@
 
 namespace Rpungello\AddressFormatter;
 
-use Rpungello\AddressFormatter\Commands\AddressFormatterCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
