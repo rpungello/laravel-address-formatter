@@ -25,6 +25,7 @@ This is the contents of the published config file:
 
 ```php
 return [
+    'default_origin_country' => 'US',
 ];
 ```
 
