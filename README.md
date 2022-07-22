@@ -1,11 +1,11 @@
-# Address formatter for Laravel powered by commerceguys/addressing
+# Laravel Address Formatter
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/rpungello/laravel-address-formatter.svg?style=flat-square)](https://packagist.org/packages/rpungello/laravel-address-formatter)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/rpungello/laravel-address-formatter/run-tests?label=tests)](https://github.com/rpungello/laravel-address-formatter/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/rpungello/laravel-address-formatter/Check%20&%20fix%20styling?label=code%20style)](https://github.com/rpungello/laravel-address-formatter/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/rpungello/laravel-address-formatter.svg?style=flat-square)](https://packagist.org/packages/rpungello/laravel-address-formatter)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Address formatter for Laravel powered by commerceguys/addressing
 
 ## Installation
 
