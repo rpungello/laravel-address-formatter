@@ -1,6 +1,6 @@
 <?php
 
-namespace Rpungello\AddressFormatter;
+namespace Rpungello\LaravelAddressing;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;

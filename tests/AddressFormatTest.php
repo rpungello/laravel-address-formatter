@@ -1,7 +1,7 @@
 <?php
 
 use CommerceGuys\Addressing\Address;
-use Rpungello\AddressFormatter\Facades\AddressFormatter;
+use Rpungello\LaravelAddressing\Facades\AddressFormatter;
 
 it('can format addresses using default format', function () {
     $address = new Address(

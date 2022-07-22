@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Rpungello\\AddressFormatter\\": "src"
+            "Rpungello\\LaravelAddressing\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rpungello\\AddressFormatter\\Tests\\": "tests"
+            "Rpungello\\LaravelAddressing\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -55,10 +55,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Rpungello\\AddressFormatter\\AddressFormatterServiceProvider"
+                "Rpungello\\LaravelAddressing\\LaravelAddressingServiceProvider"
             ],
             "aliases": {
-                "AddressFormatter": "Rpungello\\AddressFormatter\\Facades\\AddressFormatter"
+                "AddressFormatter": "Rpungello\\LaravelAddressing\\Facades\\AddressFormatter"
             }
         }
     },

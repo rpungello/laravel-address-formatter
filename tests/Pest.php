@@ -1,5 +1,5 @@
 <?php
 
-use Rpungello\AddressFormatter\Tests\TestCase;
+use Rpungello\LaravelAddressing\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

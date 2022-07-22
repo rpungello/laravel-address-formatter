@@ -1,11 +1,11 @@
 <?php
 
-namespace Rpungello\AddressFormatter\Facades;
+namespace Rpungello\LaravelAddressing\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Rpungello\AddressFormatter\AddressFormatter
+ * @see \Rpungello\LaravelAddressing\AddressFormatter
  */
 class AddressFormatter extends Facade
 {

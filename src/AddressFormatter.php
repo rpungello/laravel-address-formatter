@@ -1,6 +1,6 @@
 <?php
 
-namespace Rpungello\AddressFormatter;
+namespace Rpungello\LaravelAddressing;
 
 use CommerceGuys\Addressing\AddressFormat\AddressFormatRepository;
 use CommerceGuys\Addressing\AddressFormat\AddressFormatRepositoryInterface;

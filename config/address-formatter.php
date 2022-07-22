@@ -1,6 +1,6 @@
 <?php
 
-// config for Rpungello/AddressFormatter
+// config for Rpungello/LaravelAddressing
 return [
     'default_origin_country' => 'US',
 ];

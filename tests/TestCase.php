@@ -1,10 +1,10 @@
 <?php
 
-namespace Rpungello\AddressFormatter\Tests;
+namespace Rpungello\LaravelAddressing\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Rpungello\AddressFormatter\AddressFormatterServiceProvider;
+use Rpungello\LaravelAddressing\AddressFormatterServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Rpungello\\AddressFormatter\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Rpungello\\LaravelAddressing\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
