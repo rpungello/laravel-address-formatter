@@ -2,9 +2,9 @@
 
 namespace Rpungello\AddressFormatter;
 
+use Rpungello\AddressFormatter\Commands\AddressFormatterCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Rpungello\AddressFormatter\Commands\AddressFormatterCommand;
 
 class AddressFormatterServiceProvider extends PackageServiceProvider
 {
@@ -17,9 +17,6 @@ class AddressFormatterServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-address-formatter')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-address-formatter_table')
-            ->hasCommand(AddressFormatterCommand::class);
+            ->hasConfigFile();
     }
 }
