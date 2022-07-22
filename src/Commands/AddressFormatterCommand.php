@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Rpungello\AddressFormatter\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class AddressFormatterCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-address-formatter';
 
     public $description = 'My command';
 
