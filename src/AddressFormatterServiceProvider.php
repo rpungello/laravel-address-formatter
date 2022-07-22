@@ -18,4 +18,10 @@ class AddressFormatterServiceProvider extends PackageServiceProvider
             ->name('laravel-address-formatter')
             ->hasConfigFile();
     }
+
+    public function packageRegistered()
+    {
+        $this->app->singleton(AddressFormatter::class, fn () => new AddressFormatter());
+        $this->app->bind('laravel-address-formatter', AddressFormatter::class);
+    }
 }
