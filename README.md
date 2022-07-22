@@ -32,8 +32,9 @@ return [
 ## Usage
 
 ```php
-$addressFormatter = new Rpungello\AddressFormatter();
-echo $addressFormatter->echoPhrase('Hello, Rpungello!');
+$address = new \CommerceGuys\Addressing\Address();
+\Rpungello\LaravelAddressing\Facades\AddressFormatter::formatDefault($address);
+\Rpungello\LaravelAddressing\Facades\AddressFormatter::formatPostal($address);
 ```
 
 ## Testing
