@@ -55,7 +55,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Rpungello\\LaravelAddressing\\LaravelAddressingServiceProvider"
+                "Rpungello\\LaravelAddressing\\AddressFormatterServiceProvider"
             ],
             "aliases": {
                 "AddressFormatter": "Rpungello\\LaravelAddressing\\Facades\\AddressFormatter"
