@@ -31,8 +31,13 @@ class AddressFormatter
         $this->countryRepository = new CountryRepository();
         $this->subdivisionRepository = new SubdivisionRepository();
 
-        $this->defaultFormatter = new DefaultFormatter($this->formatRepository, $this->countryRepository, $this->subdivisionRepository);
-        $this->postalFormatter = new PostalLabelFormatter($this->formatRepository, $this->countryRepository, $this->subdivisionRepository);
+        $this->defaultFormatter = new DefaultFormatter($this->formatRepository, $this->countryRepository, $this->subdivisionRepository, [
+            'html' => false,
+        ]);
+        $this->postalFormatter = new PostalLabelFormatter($this->formatRepository, $this->countryRepository, $this->subdivisionRepository, [
+            'html' => false,
+            'origin_country' => config('address-formatter.default_origin_country'),
+        ]);
     }
 
     public function formatDefault(AddressInterface $address, array $options = []): string
@@ -42,19 +47,11 @@ class AddressFormatter
 
     public function format(AddressInterface $address, FormatterInterface $formatter, array $options = []): string
     {
-        if (! array_key_exists('html', $options)) {
-            $options['html'] = false;
-        }
-
         return $formatter->format($address, $options);
     }
 
-    public function formatPostal(AddressInterface $address, array $options = [])
+    public function formatPostal(AddressInterface $address, array $options = []): string
     {
-        if (! array_key_exists('origin_country', $options)) {
-            $options['origin_country'] = config('address-formatter.default_origin_country', 'US');
-        }
-
         return $this->format($address, $this->postalFormatter, $options);
     }
 }
