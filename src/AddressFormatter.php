@@ -27,9 +27,9 @@ class AddressFormatter
 
     public function __construct()
     {
-        $this->formatRepository = new AddressFormatRepository();
-        $this->countryRepository = new CountryRepository();
-        $this->subdivisionRepository = new SubdivisionRepository();
+        $this->formatRepository = new AddressFormatRepository;
+        $this->countryRepository = new CountryRepository;
+        $this->subdivisionRepository = new SubdivisionRepository;
 
         $this->defaultFormatter = new DefaultFormatter($this->formatRepository, $this->countryRepository, $this->subdivisionRepository, [
             'html' => false,
