@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-address-formatter` will be documented in this file.
 
+## 2.1.0 - 2025-03-01
+
+Added support for Laravel 12
+
 ## 2.0.0 - 2024-03-22
 
 Added support for Laravel 10 & 11
